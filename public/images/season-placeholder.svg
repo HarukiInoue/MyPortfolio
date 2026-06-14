@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Soft season placeholder">
+  <rect width="900" height="1200" fill="#ded8cd"/>
+  <path d="M418 1200V232" stroke="#766b5f" stroke-width="22" stroke-linecap="round"/>
+  <path d="M421 465c-150-98-247-111-291-39 83 78 183 91 291 39z" fill="#b9a18f"/>
+  <path d="M426 635c152-105 265-117 339-38-93 86-206 99-339 38z" fill="#9ea88c"/>
+  <path d="M423 332c108-86 195-101 261-45-59 75-146 90-261 45z" fill="#c3b8a8"/>
+</svg>

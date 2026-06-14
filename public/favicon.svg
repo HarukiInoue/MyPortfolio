@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Haruki Inoue favicon">
+  <rect width="64" height="64" fill="#fff"/>
+  <rect x="8" y="8" width="48" height="48" fill="none" stroke="#0a0a0a" stroke-width="4"/>
+  <path d="M18 18h5v12h18V18h5v28h-5V34H23v12h-5z" fill="#0a0a0a"/>
+  <rect x="8" y="52" width="48" height="4" fill="#e4002b"/>
+</svg>

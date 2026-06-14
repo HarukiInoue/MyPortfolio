@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-label="Muted landscape placeholder">
+  <rect width="1600" height="1000" fill="#d9d4c7"/>
+  <path d="M0 710c210-100 396-118 558-54 185 73 314 61 480-35 176-101 360-96 562 18v361H0z" fill="#7d8a72"/>
+  <path d="M0 526c202-50 370-36 505 42 169 98 342 89 519-25 177-113 369-126 576-38v217H0z" fill="#a9ad95" opacity=".82"/>
+  <circle cx="1185" cy="255" r="105" fill="#f3ead1" opacity=".72"/>
+</svg>

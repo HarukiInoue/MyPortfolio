@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 750" role="img" aria-label="City light placeholder">
+  <rect width="1000" height="750" fill="#cfd2d0"/>
+  <rect x="88" y="210" width="170" height="540" fill="#777d7c"/>
+  <rect x="300" y="130" width="110" height="620" fill="#555d60"/>
+  <rect x="455" y="250" width="205" height="500" fill="#858476"/>
+  <rect x="720" y="180" width="150" height="570" fill="#6d7478"/>
+  <circle cx="705" cy="165" r="54" fill="#f0dcc0" opacity=".7"/>
+</svg>

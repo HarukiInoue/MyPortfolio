@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haruki Inoue Photography</title>
+    <link rel="icon" type="image/svg+xml" href="../../public/favicon.svg" />
+    <link rel="stylesheet" href="../styles/base.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="サイトヘッダー">
+      <div class="wrap header-grid">
+        <a class="brand masthead" href="#">Haruki Inoue</a>
+        <nav aria-label="ページ内ナビゲーション">
+          <a href="#works">Works</a>
+          <a href="#about">About</a>
+          <a href="https://www.instagram.com/haruki____0331/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="spread hero" aria-label="メイン写真">
+        <figure class="hero-opening" aria-hidden="true">
+          <img src="../../public/images/photos/redd.png" alt="" />
+        </figure>
+        <div class="wrap hero-frame">
+          <div class="guides" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="band hero-band">
+            <figure class="hero-photo">
+              <img src="../../public/images/photos/redd.png" alt="暗い道の上で手持ち花火が光っている" />
+            </figure>
+            <div class="hero-meta">
+              <p class="eyebrow">01 / 36</p>
+              <p class="hero-title masthead">
+                <span>A</span>
+                <span>Small</span>
+                <span>Fire</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="spread intro" id="about" aria-labelledby="about-title">
+        <div class="wrap">
+          <div class="guides" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="band intro-band">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">Places, light, seasons, and small scenes from everyday walks.</h2>
+            <p>
+              A restrained selection of personal photographs. The interface stays quiet so the images
+              can carry the pace, texture, and memory of each place.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="spread works" id="works" aria-labelledby="works-title">
+        <div class="wrap">
+          <div class="guides" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="band section-heading">
+            <p class="eyebrow">Selected Works</p>
+            <h2 id="works-title">Gallery</h2>
+            <p class="work-count">35 photographs</p>
+          </div>
+          <aside class="gallery-status" aria-live="polite" aria-label="現在表示中の写真">
+            <span class="gallery-status-number">02</span>
+            <span class="gallery-status-title">Closed Afternoon</span>
+          </aside>
+          <div class="band photo-grid" id="photo-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <button class="grid-toggle" type="button" aria-pressed="false" aria-label="グリッドを表示">Grid</button>
+
+    <dialog class="lightbox" aria-label="写真プレビュー">
+      <button class="close-button" type="button" aria-label="閉じる">×</button>
+      <img src="" alt="" />
+    </dialog>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

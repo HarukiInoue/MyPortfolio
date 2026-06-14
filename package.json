@@ -1,0 +1,12 @@
+{
+  "name": "photo-portfolio-multi-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 4173",
+    "lint": "node --check src/app/main.js && node --check src/components/gallery.js && node --check src/data/photos.js",
+    "build": "npm run lint"
+  },
+  "devDependencies": {}
+}

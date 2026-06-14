@@ -1,0 +1,46 @@
+const displayPath = "../../public/images/photos-display";
+const fullPath = "../../public/images/photos";
+
+export const photos = [
+  ["DSC00882.jpg", "Closed Afternoon", "閉店した店先の植物と白いシャッター", "wide-card"],
+  ["DSC00889.jpg", "Still Corner", "日常の中で見つけた光景", ""],
+  ["DSC01435.jpg", "Skytree", "青空に向かって伸びる東京スカイツリー", "tall-card"],
+  ["DSC01448.jpg", "City Air", "東京の街で撮影した風景", "wide-card"],
+  ["DSC01460.jpg", "Blue Geometry", "街で撮影した建築と空", "tall-card"],
+  ["DSC01469.jpg", "Tokyo Frame", "東京の街を切り取った写真", "wide-card"],
+  ["DSC01476.jpg", "Looking Up", "都市の中で見上げた風景", "tall-card"],
+  ["DSC01626.jpg", "Colorful Evening", "夕方の広場でカラフルな風船を持つ人たち", "wide-card"],
+  ["DSC02395.jpg", "Street Fragment", "街中で見つけた光と影", ""],
+  ["DSC02612.jpg", "Passing Scene", "旅先で撮影した静かな一場面", "tall-card"],
+  ["DSC02701.jpg", "Spring Light", "逆光の中で咲く淡いピンクの梅の花", "tall-card"],
+  ["DSC02702.jpg", "Soft Blossom", "柔らかな光の花", "tall-card"],
+  ["DSC02748.jpg", "Pale Spring", "春の風景", "tall-card"],
+  ["DSC02835.jpg", "On The Way", "旅の途中で撮影した風景", ""],
+  ["DSC02840.jpg", "Sunlit Walk", "日差しのある風景", "wide-card"],
+  ["DSC03976.jpg", "Quiet Travel", "旅先の風景", "tall-card"],
+  ["DSC03996.jpg", "Muted Scene", "静かな風景", "wide-card"],
+  ["DSC04080-3.jpg", "Open Air", "広がりのある風景写真", "panorama-card"],
+  ["DSC04131-2.jpg", "Fog Field", "霧がかかった緑の丘陵風景", "wide-card"],
+  ["DSC04216.JPG", "Green Distance", "自然の中で撮影した風景", "wide-card", "DSC04216.jpg"],
+  ["DSC04890.jpg", "Quiet Coast", "夕方の海辺と防波堤の風景", "wide-card"],
+  ["DSC05109.jpg", "Light Study", "光の差す屋外の風景", ""],
+  ["DSC05116.jpg", "Seasonal Frame", "日差しの中で撮影した季節の風景", "wide-card"],
+  ["DSC05693.jpg", "Everyday Light", "日常の風景", ""],
+  ["DSC05854.jpg", "Soft Color", "柔らかな色合いの旅の写真", "wide-card"],
+  ["DSC05950.jpg", "Small View", "旅先で見た景色", ""],
+  ["DSC06041.jpg", "Warm Trace", "光のある風景", ""],
+  ["DSC06926.jpg", "Silent Stop", "旅先で撮影した静かな一場面", ""],
+  ["DSC07017.jpg", "Road Memory", "旅行中に撮影した風景", ""],
+  ["DSC07022.jpg", "Wide Travel", "旅先の広い風景", "wide-card"],
+  ["DSC07132.jpg", "Warm Counter", "暖かな照明のあるカフェカウンター", ""],
+  ["DSC07174.jpg", "Indoor Light", "室内で撮影した光景", ""],
+  ["DSC07545.jpg", "Forest By Water", "湖のそばに立つ細い木々と森", "wide-card"],
+  ["DSC07572.jpg", "Forest Shade", "森の中の景色", "tall-card"],
+  ["DSC09132.jpg", "Autumn Walk", "紅葉の中で寺院を見上げる人物", "panorama-card"]
+].map(([file, title, alt, layout, displayFile]) => ({
+  title,
+  src: `${displayPath}/${displayFile || file}`,
+  full: `${fullPath}/${file}`,
+  alt,
+  layout
+}));
