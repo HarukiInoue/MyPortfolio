@@ -29,6 +29,19 @@ The UI should support the photos, not compete with them.
 - Reuse existing components and design tokens before creating new ones.
 - Avoid hard-coded one-off styles when a reusable class or variable is appropriate.
 
+## Publishing and rights workflow
+
+For public portfolio publishing tasks:
+
+1. Confirm the site clearly identifies the photographer or owner.
+2. Include a concise copyright notice for photographs, text, and site design.
+3. State whether image reproduction, download, commercial use, or reposting is permitted.
+4. Provide a contact path for print, usage, collaboration, or portfolio inquiries.
+5. Keep legal and rights text quiet, readable, and secondary to the photographs.
+6. Avoid overclaiming licensing terms unless the owner explicitly provides them.
+7. Do not invent private contact details; use only contact routes provided by the owner.
+8. Verify that public-facing metadata, navigation, and footer information remain consistent.
+
 ## UI improvement workflow
 
 For UI improvement tasks:
@@ -79,6 +92,17 @@ Interactive improvements pass only when:
 - Gallery orientation: while browsing works, the current photo number/title updates without competing with the image.
 - Motion restraint: no animation distracts from the photographs, and reduced-motion users get a stable layout.
 - Maintainability: interaction state is driven by a small set of CSS variables/classes and plain JavaScript.
+- Verification: `npm run lint` and `npm run build` pass.
+
+## Public portfolio completion criteria
+
+Public-facing portfolio updates pass only when:
+
+- Ownership: the photographer/site owner is visible.
+- Copyright: there is a clear `© YEAR Name` notice.
+- Usage terms: visitors are told not to reproduce or use photographs without permission.
+- Contact: there is at least one clear inquiry/contact route.
+- Presentation: rights text does not compete with the photographs.
 - Verification: `npm run lint` and `npm run build` pass.
 
 ## Verification

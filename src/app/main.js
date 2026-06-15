@@ -5,12 +5,13 @@ const grid = document.querySelector("#photo-grid");
 const dialog = document.querySelector(".lightbox");
 const preview = dialog.querySelector("img");
 const closeButton = dialog.querySelector(".close-button");
-const gridToggle = document.querySelector(".grid-toggle");
 const hero = document.querySelector(".hero");
+const works = document.querySelector("#works");
 const galleryStatus = document.querySelector(".gallery-status");
 const galleryStatusNumber = document.querySelector(".gallery-status-number");
 const galleryStatusTitle = document.querySelector(".gallery-status-title");
 let previewRequestId = 0;
+let currentFigure = null;
 
 renderGallery(grid, photos);
 
@@ -31,21 +32,6 @@ const setHeroProgress = () => {
 setHeroProgress();
 window.addEventListener("scroll", setHeroProgress, { passive: true });
 window.addEventListener("resize", setHeroProgress);
-
-const setGridState = (enabled) => {
-  document.body.classList.toggle("grid-on", enabled);
-  gridToggle.setAttribute("aria-pressed", String(enabled));
-};
-
-gridToggle.addEventListener("click", () => {
-  setGridState(!document.body.classList.contains("grid-on"));
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key.toLowerCase() === "g" && !event.metaKey && !event.ctrlKey && !event.altKey) {
-    setGridState(!document.body.classList.contains("grid-on"));
-  }
-});
 
 const loadImage = (src) =>
   new Promise((resolve, reject) => {
@@ -112,12 +98,43 @@ const updateGalleryStatus = (figure) => {
   }
 
   const index = Number(figure.dataset.index) + 2;
+  const progress = clamp((index - 1) / photos.length, 0, 1);
+  const isLastGalleryPhoto = index >= photos.length + 1;
+
+  if (currentFigure && currentFigure !== figure) {
+    currentFigure.classList.remove("is-current");
+  }
+
+  currentFigure = figure;
+  currentFigure.classList.add("is-current");
+  document.body.classList.toggle("gallery-status-visible", !isLastGalleryPhoto);
   galleryStatusNumber.textContent = String(index).padStart(2, "0");
   galleryStatusTitle.textContent = figure.dataset.title || "";
+  document.documentElement.style.setProperty("--gallery-progress", progress.toFixed(4));
 };
+
+const worksObserver = new IntersectionObserver(
+  ([entry]) => {
+    if (!entry.isIntersecting) {
+      document.body.classList.remove("gallery-status-visible");
+    }
+  },
+  {
+    rootMargin: "-15% 0px -15% 0px",
+    threshold: 0
+  }
+);
+
+if (works) {
+  worksObserver.observe(works);
+}
 
 const galleryObserver = new IntersectionObserver(
   (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("is-in-view", entry.isIntersecting);
+    });
+
     const visible = entries
       .filter((entry) => entry.isIntersecting)
       .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];

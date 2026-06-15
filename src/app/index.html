@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Haruki Inoue Photography</title>
+    <meta
+      name="description"
+      content="A personal photography portfolio by Haruki Inoue. All photographs are protected by copyright."
+    />
+    <meta name="author" content="Haruki Inoue" />
+    <meta property="og:title" content="Haruki Inoue Photography" />
+    <meta
+      property="og:description"
+      content="A personal photography portfolio by Haruki Inoue. All photographs are protected by copyright."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../../public/images/photos-display/redd.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="../../public/favicons/favicon-c-number.svg" />
     <link rel="stylesheet" href="../styles/base.css" />
   </head>
@@ -14,6 +27,7 @@
         <nav aria-label="ページ内ナビゲーション">
           <a href="#works">Works</a>
           <a href="#about">About</a>
+          <a href="#rights">Contact</a>
           <a href="https://www.instagram.com/haruki____0331/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </nav>
       </div>
@@ -36,9 +50,10 @@
             <div class="hero-meta">
               <p class="eyebrow">01 / 36</p>
               <p class="hero-title masthead">
-                <span>A</span>
+                <!-- <span>A</span>
                 <span>Small</span>
-                <span>Fire</span>
+                <span>Fire</span> -->
+                <span>Ignition</span>
               </p>
             </div>
           </div>
@@ -55,8 +70,9 @@
             <p class="eyebrow">About</p>
             <h2 id="about-title">Places, light, seasons, and small scenes from everyday walks.</h2>
             <p>
-              A restrained selection of personal photographs. The interface stays quiet so the images
-              can carry the pace, texture, and memory of each place.
+              Haruki Inoue is a photographer in Japan working with personal scenes, travel,
+              streets, seasons, and small changes of light. This portfolio collects selected
+              personal work for viewing, print, usage, collaboration, and portfolio inquiries.
             </p>
           </div>
         </div>
@@ -71,7 +87,7 @@
           <div class="band section-heading">
             <p class="eyebrow">Selected Works</p>
             <h2 id="works-title">Gallery</h2>
-            <p class="work-count">35 photographs</p>
+            <p class="work-count">35 selected works / 36 total</p>
           </div>
           <aside class="gallery-status" aria-live="polite" aria-label="現在表示中の写真">
             <span class="gallery-status-number">02</span>
@@ -80,9 +96,38 @@
           <div class="band photo-grid" id="photo-grid"></div>
         </div>
       </section>
+
+      <section class="spread rights" id="rights" aria-labelledby="rights-title">
+        <div class="wrap">
+          <div class="guides" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="band rights-band">
+            <p class="eyebrow">Rights / Contact</p>
+            <h2 id="rights-title">Photographs by Haruki Inoue.</h2>
+            <div class="rights-copy">
+              <p>
+                All photographs, captions, and site materials are original works by Haruki Inoue
+                unless otherwise noted. Please do not reproduce, repost, edit, sell, train models
+                with, or use any photograph without prior permission.
+              </p>
+              <p>
+                For print, usage, collaboration, or portfolio inquiries, contact me on
+                <a href="https://www.instagram.com/haruki____0331/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <button class="grid-toggle" type="button" aria-pressed="false" aria-label="グリッドを表示">Grid</button>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <small>© 2026 Haruki Inoue. All rights reserved.</small>
+        <a href="https://www.instagram.com/haruki____0331/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </footer>
 
     <dialog class="lightbox" aria-label="写真プレビュー">
       <button class="close-button" type="button" aria-label="閉じる">×</button>
